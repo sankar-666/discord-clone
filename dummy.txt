@@ -1,0 +1,17 @@
+dsicord-clone
+
+next js
+client - auth
+mysql - db
+tailwind, shadcn - theme, darkmode toggle
+prisma - orm
+
+
+prisma:
+npm i -D prisma
+npx prisma init
+
+npx prisma generate
+npx prisma db push
+
+npm i @prisma/client
