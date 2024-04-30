@@ -5,9 +5,12 @@ client - auth
 mysql - db
 tailwind, shadcn - theme, darkmode toggle
 prisma - orm
+form - react form
+validation - zod
+imageupload - uploadthing.com
 
 
-prisma:
+prisma commands:
 npm i -D prisma
 npx prisma init
 
