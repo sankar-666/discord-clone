@@ -45,12 +45,14 @@ export const FileUpload = ({ onChange, endpoint, value, setIsFileUploadFailed }:
         <UploadDropzone
             endpoint={endpoint}
             onClientUploadComplete={(res) => {
+                setIsFileUploadFailed({status: false, error: ""})
                 onChange(res?.[0].url)
             }}
             onUploadError={(error: Error) => {
-                console.log(error.message)
-                setIsFileUploadFailed({status: true, error: error.message})
+                console.log(error);
+                setIsFileUploadFailed({status: true, error: "File size must be less than 4MB"})
             }}
+        
         />
     )   
 } 
