@@ -103,6 +103,7 @@ export const InitialModal = () => {
                                                     setIsFileUploadFailed={setIsFileUploadFailed}
                                                 />
                                             </FormControl>
+                                            <FormMessage />
                                             {isFileUploadFailed.status && (
                                             <label className="text-red-700 mt-1">
                                                 {isFileUploadFailed?.error}
