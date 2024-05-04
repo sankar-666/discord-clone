@@ -8,6 +8,7 @@ prisma - orm
 form - react form
 validation - zod
 imageupload - uploadthing.com
+zustand - work with modals
 
 
 prisma commands:
