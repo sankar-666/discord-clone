@@ -3,7 +3,7 @@
 import { Plus } from "lucide-react";
 import { ActionTooltip } from "@/components/action-tooltip";
 
-export const NavigationAction = async () => {
+export const NavigationAction = () => {
     return (
         <div>
             <ActionTooltip

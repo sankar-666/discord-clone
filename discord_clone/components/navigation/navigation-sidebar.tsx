@@ -3,6 +3,8 @@ import { redirect } from "next/navigation";
 import { db } from "@/lib/db";
 import { NavigationAction } from "@/components/navigation/navigation-action";
 import { Separator } from "@/components/ui/separator";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { NavigationItem } from "@/components/navigation/navigation-item";
 
 export const NavigationSidebar = async () => {
     const profile = await currentProfile();
@@ -29,6 +31,17 @@ export const NavigationSidebar = async () => {
             <Separator
                 className="h-[2px] bg-zinc-300 dark:bg-zinc-700 rounded-md w-10 mx-auto"
             />
+            <ScrollArea className="flex-1 w-full">
+                {servers.map(server => (
+                    <div key={server.id} className="mb-4">
+                        <NavigationItem
+                            id={server.id}
+                            imageUrl={server.imageUrl}
+                            name={server.name}
+                        />
+                    </div>
+                ))}
+            </ScrollArea>
         </div>
      );
 }
