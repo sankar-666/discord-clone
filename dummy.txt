@@ -21,3 +21,5 @@ npx prisma db push
 npm i @prisma/client
 
 npx prisma studio
+
+npx prisma migrate reset   // for clearing complete data
