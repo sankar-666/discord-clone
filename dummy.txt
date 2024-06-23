@@ -23,3 +23,5 @@ npm i @prisma/client
 npx prisma studio
 
 npx prisma migrate reset   // for clearing complete data
+
+4.45.10
